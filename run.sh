@@ -1,0 +1,5 @@
+#!/bin/bash
+
+nasm -f elf64 main.asm -o main.o
+ld -m elf_x86_64 main.o -o main
+./main
